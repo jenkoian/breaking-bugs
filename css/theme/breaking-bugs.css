@@ -1,0 +1,689 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+/**
+ * Solarized Dark theme for reveal.js.
+ * Author: Achim Staebler
+ */
+@font-face {
+  font-family: 'League Gothic';
+  src: url("../../lib/font/league_gothic-webfont.eot");
+  src: url("../../lib/font/league_gothic-webfont.eot?#iefix") format("embedded-opentype"), url("../../lib/font/league_gothic-webfont.woff") format("woff"), url("../../lib/font/league_gothic-webfont.ttf") format("truetype"), url("../../lib/font/league_gothic-webfont.svg#LeagueGothicRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'bundyregular';
+    src: url('../../lib/font/bundy-regular-webfont.eot');
+    src: url('../../lib/font/bundy-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../../lib/font/bundy-regular-webfont.woff') format('woff'),
+    url('../../lib/font/bundy-regular-webfont.ttf') format('truetype'),
+    url('../../lib/font/bundy-regular-webfont.svg#bundyregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/**
+ * Solarized colors by Ethan Schoonover
+ */
+html * {
+  color-profile: sRGB;
+  rendering-intent: auto;
+  box-sizing: border-box;
+}
+
+/*********************************************
+ * GLOBAL STYLES
+ *********************************************/
+body {
+    margin-top:15px;
+    background:#000;
+    background:
+        linear-gradient(left, rgba(33,53,18,.3) 0%,rgba(38,88,19,.4) 30%,rgba(73,91,9,.3) 74%,rgba(24,43,4,.3) 100%),
+        #000;
+
+    background:
+        linear-gradient(to left, rgba(33,53,18,.3) 0%,rgba(38,88,19,.4) 30%,rgba(73,91,9,.3) 74%,rgba(24,43,4,.3) 100%),
+        #000;
+}
+
+.reveal {
+  font-family: "Lato", sans-serif;
+  font-size: 36px;
+  font-weight: 200;
+  letter-spacing: -0.02em;
+  color: #FFF; }
+
+::selection {
+  color: white;
+  background: #0f2308;
+  text-shadow: none; }
+
+.reveal p {
+    /*font-family: bundyregular;*/
+}
+
+/*********************************************
+ * HEADERS
+ *********************************************/
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  margin: 0 0 20px 0;
+  color: #eee8d5;
+  font-family: "League Gothic", Impact, sans-serif;
+  line-height: 0.9em;
+  letter-spacing: 0.02em;
+  text-shadow: none; }
+
+.reveal h1 {
+  text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2); }
+
+.reveal h2 {
+    font-size: 2em;
+}
+
+.reveal pre {
+    box-shadow: none;
+}
+/*********************************************
+ * LINKS
+ *********************************************/
+.reveal a:not(.image) {
+  color: #268bd2;
+  text-decoration: none;
+  -webkit-transition: color .15s ease;
+  -moz-transition: color .15s ease;
+  -ms-transition: color .15s ease;
+  -o-transition: color .15s ease;
+  transition: color .15s ease; }
+
+.reveal a:not(.image):hover {
+  color: #78b9e6;
+  text-shadow: none;
+  border: none; }
+
+.reveal .roll span:after {
+  color: #fff;
+  background: #1a6091; }
+
+/*********************************************
+ * IMAGES
+ *********************************************/
+.reveal section img {
+  margin: 15px 0px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 4px solid #93a1a1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  -ms-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear; }
+
+.reveal a:hover img {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: #268bd2;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
+
+/*********************************************
+ * NAVIGATION CONTROLS
+ *********************************************/
+.reveal .controls div.navigate-left,
+.reveal .controls div.navigate-left.enabled {
+  border-right-color: #268bd2; }
+
+.reveal .controls div.navigate-right,
+.reveal .controls div.navigate-right.enabled {
+  border-left-color: #268bd2; }
+
+.reveal .controls div.navigate-up,
+.reveal .controls div.navigate-up.enabled {
+  border-bottom-color: #268bd2; }
+
+.reveal .controls div.navigate-down,
+.reveal .controls div.navigate-down.enabled {
+  border-top-color: #268bd2; }
+
+.reveal .controls div.navigate-left.enabled:hover {
+  border-right-color: #78b9e6; }
+
+.reveal .controls div.navigate-right.enabled:hover {
+  border-left-color: #78b9e6; }
+
+.reveal .controls div.navigate-up.enabled:hover {
+  border-bottom-color: #78b9e6; }
+
+.reveal .controls div.navigate-down.enabled:hover {
+  border-top-color: #78b9e6; }
+
+/*********************************************
+ * PROGRESS BAR
+ *********************************************/
+.reveal .progress {
+  background: rgba(0, 0, 0, 0.2); }
+
+.reveal .progress span {
+  background: #268bd2;
+  -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -ms-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -o-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
+
+/********************************************
+ * BREAKING BAD STYLES
+ *******************************************/
+div#breakingbad {
+    position:relative;
+    width:600px;
+    height:330px;
+    /*margin:0 auto;*/
+    overflow:visible;
+}
+
+#breakingbad span {
+    color: #FFF;
+}
+
+#breakingbad .chemical-element {
+    width:165px;
+    height:165px;
+    position:relative;
+
+    font: bold 95px Arial;
+    color:#fafffb;
+
+    padding:25px 25px 25px 30px;
+    border:3px solid #DDFFE2;
+
+    display:inline-block;
+    background: linear-gradient(-45deg, rgba(92,190,115,1) 1%,rgba(24,43,4,1) 100%);
+
+    box-shadow:inset 0 0 0 1px rgba(0, 0, 0, .15);
+}
+
+#breakingbad .chemical-element:nth-child(4) {
+    margin-left:325px;
+    padding-left:23px;
+}
+
+#breakingbad .desc {
+    position:absolute;
+    font: bold 13px Arial;
+    color:rgba(244, 247, 245, .95);
+}
+
+#breakingbad .big {
+    font: bold 20px Arial;
+}
+
+#breakingbad .medium {
+    font: bold 17px Arial;
+}
+
+#breakingbad div[role="top-left"] {
+    top:8px;
+    left:10px;
+}
+
+#breakingbad div[role="top-right"] {
+    top:8px;
+    right:5px;
+    text-align:right;
+    width:25px;
+}
+
+#breakingbad div[role="bottom-left-1"] {
+    bottom:20px;
+    left:5px;
+    text-align:left;
+}
+
+#breakingbad div[role="bottom-left-2"] {
+    bottom:5px;
+    left:5px;
+    text-align:left;
+}
+
+#breakingbad .title-1,
+#breakingbad .title-2 {
+    width:50px;
+    display:inline-block;
+    height: 130px;
+    vertical-align: bottom;
+    font-family: bundyregular;
+    height: 134px;
+    font-size: 2.7em;
+    padding: 33px 10px;
+}
+
+#breakingbad #smoke {
+    position:absolute;
+    z-index:-1;
+    left:30%;
+    top:-15px;
+}
+
+#breakingbad audio {
+    display:none;
+}
+
+#breakingbad #player {
+    position:fixed;
+    top:20px;
+    right:20px;
+    transition:all .3s ease-in;
+    opacity:.1;
+    cursor:pointer;
+}
+
+#breakingbad #player:hover {
+    opacity:1;
+}
+
+#breakingbad #player svg[role="playing"] {
+    display:none;
+}
+
+/*********** Slide 2 **********/
+.slide2 body {
+    background: url("../../img/bigsean.jpg") no-repeat 0 0;
+    background-size: 100% auto;
+}
+
+.slide2 .bigsean {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    color: white;
+    font-family: "League Gothic", Impact, sans-serif;
+    font-size: 1.8em;
+    background-color: #0f2308;
+    padding: 10px;
+    z-index: -1;
+ }
+
+.slide2 .notbigsean {
+    position: absolute;
+    top: 200px;
+    right: 0;
+    color: white;
+    font-family: "League Gothic", Impact, sans-serif;
+    font-size: 1.8em;
+    background-color: #0f2308;
+    padding: 10px;
+    z-index: -1;
+}
+
+.slide2 .img-div {
+    float: right;
+    position: relative;
+    width: 490px;
+    height: 798px;
+    top: -70px;
+}
+
+.slide2 img {
+    z-index: 1;
+    right: 0;
+    position: absolute;
+}
+
+/********** Slide 3 **********/
+.slide3 body {
+    background: url("../../img/bb-fly.png") no-repeat 0 0;
+    background-size: 100% 100%;
+}
+
+.slide3 h2 {
+    display: inline;
+    color: white;
+    background-color: #0f2308;
+    padding: 10px;
+    z-index: -1;
+}
+
+/********** Slide 4 **********/
+.slide4 body {
+    background: url("../../img/bb-fly.png") no-repeat 0 0;
+    background-size: 100% 100%;
+}
+
+.slide4 blockquote {
+    background-color: rgba(15, 35, 8, 1);
+    font-size: 1.8em;
+    line-height: 1em;
+    width: 100%;
+}
+
+.slide4 small {
+    float: right;
+}
+
+/********** Slide 5 *************/
+.slide5 body {
+    background: url("../../img/bb-salamanca.jpeg") no-repeat 0 0;
+    background-size: 100% 100%;
+}
+
+.slide5 h2 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: inline;
+    color: white;
+    background-color: #0f2308;
+    padding: 10px;
+}
+
+/********** Slide 6/7 **********/
+.slide6 body,
+.slide7 body {
+    background: url("../../img/bb-sad.jpg") no-repeat 0 0;
+    background-size: 100% 100%;
+}
+
+.slide6 h2,
+.slide7 h2 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: inline;
+    color: white;
+    background-color: #0f2308;
+    padding: 10px;
+}
+
+.slide7 img {
+    border: none;
+    clear: both;
+    float: right;
+}
+
+/********** Slide 8/9 *************/
+.slide8 body,
+.slide9 body {
+    background: url("../../img/bb-confused.jpg") no-repeat 0 0;
+    background-size: 100% 100%;
+}
+
+.slide8 section.present {
+    top: -300px !important;
+}
+
+.slide8 h2 {
+    display: inline;
+    color: white;
+    background-color: #0f2308;
+    padding: 10px;
+}
+
+/********* Slide 9 ***************/
+.slide9 h2 {
+    display: inline-block;
+    color: white;
+    background-color: #0f2308;
+    padding: 10px;
+}
+
+/******** Slide 10 **************/
+.slide10 blockquote {
+    font-size: 0.8em;
+    width: 100%;
+}
+
+.slide10 small {
+    float: right;
+}
+
+/********** Slide 11 *************/
+.slide11 body {
+    background: url("../../img/bb-beers.jpg") no-repeat 0 0;
+    background-size: 100% auto;
+}
+
+.slide11 h2 {
+    display: inline;
+    color: white;
+    background-color: #0f2308;
+    padding: 10px;
+}
+
+/********** Slide 12 *************/
+.slide12 body {
+    background: url("../../img/bb-cooking.jpg") no-repeat 0 0;
+    background-size: 100% auto;
+}
+
+.slide12 h2 {
+    display: inline;
+    color: white;
+    background-color: #0f2308;
+    padding: 10px;
+}
+
+.slide12 small {
+    float: right;
+}
+
+/********** Slide 13 *************/
+.slide13 body {
+    background: url("../../img/bb-shout.jpg") no-repeat 0 0;
+    background-size: 100% auto;
+}
+
+.slide13 h2 {
+    display: inline;
+    color: white;
+    background-color: #0f2308;
+    padding: 10px;
+}
+
+/********** Slide 14 *************/
+.slide14 body {
+    background: url("../../img/bb-pants.jpg") no-repeat 0 0;
+    background-size: 100% 100%;
+}
+
+.slide14 h2 {
+    display: inline;
+    color: white;
+    background-color: #0f2308;
+    padding: 10px;
+}
+
+/********** Slide 15 *************/
+.slide15 body {
+    background: url("../../img/bb-twins.jpg") no-repeat 0 0;
+    background-size: 100% auto;
+}
+
+.slide15 h2 {
+    display: inline;
+    color: white;
+    background-color: #0f2308;
+    padding: 10px;
+}
+
+/********** Slide 16 *************/
+.slide16 body {
+    background: url("../../img/bb-lab.jpg") no-repeat 0 0;
+    background-size: 100% 100%;
+}
+
+.slide16 h2 {
+    display: inline;
+    color: white;
+    background-color: #0f2308;
+    padding: 10px;
+}
+
+/********** Slide 17 *************/
+.slide17 body {
+    background: url("../../img/bb-lab.jpg") no-repeat 0 0;
+    background-size: 100% 100%;
+}
+
+.slide17 h2 {
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    background-color: #0f2308;
+}
+
+/********** Slide 18/21/23/25/28/30/34/37 *************/
+.slide18 body,
+.slide21 body,
+.slide23 body,
+.slide25 body,
+.slide28 body,
+.slide30 body,
+.slide34 body,
+.slide37 body {
+    background: url("../../img/bb-lab.jpg") no-repeat 0 0;
+    background-size: 100% 100%;
+}
+
+.slide18 h2,
+.slide21 h2,
+.slide23 h2,
+.slide25 h2,
+.slide28 h2,
+.slide30 h2,
+.slide34 h2,
+.slide37 h2 {
+    display: inline-block;
+    padding: 10px;
+    color: white;
+}
+.slide18 h2.active,
+.slide21 h2.active,
+.slide23 h2.active,
+.slide25 h2.active,
+.slide28 h2.active,
+.slide30 h2.active,
+.slide34 h2.active,
+.slide37 h2.active {
+    background-color: #0f2308;
+}
+
+/********** Slide 19/20 *************/
+.slide19 body,
+.slide20 body {
+    background: url("../../img/bb-count.jpg") no-repeat 0 0;
+    background-size: 100% 100%;
+}
+
+.slide19 h2,
+.slide20 h2 {
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    background-color: #0f2308;
+}
+
+/********** Slide 38/39/40 *************/
+.slide38 body,
+.slide39 body,
+.slide40 body {
+    background: url("../../img/bb-heisenberg.jpg") no-repeat 0 0;
+    background-size: 100% auto;
+}
+
+.slide38 h2,
+.slide39 h2,
+.slide40 h2 {
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    background-color: #0f2308;
+}
+
+.slide39 blockquote {
+    width: 100%;
+    background-color: #0f2308;
+}
+
+.slide39 small,
+.slide40 small {
+    float: right;
+}
+
+.slide40 p {
+    display: inline-block;
+    background-color: #0f2308;
+    margin-bottom: 1.6em;
+    padding: 0 10px;
+}
+
+/********** Slide 41/42/43 *************/
+.slide41 body,
+.slide42 body,
+.slide43 body {
+    background: url("../../img/bb-teddy.jpg") no-repeat 0 0;
+    background-size: 100% auto;
+}
+
+.slide41 h2,
+.slide42 h2,
+.slide43 h2 {
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    background-color: #0f2308;
+}
+
+.slide42 blockquote {
+    width: 100%;
+    background-color: #0f2308;
+}
+
+.slide42 small,
+.slide43 small {
+    float: right;
+}
+
+.slide43 p {
+    display: inline-block;
+    background-color: #0f2308;
+    margin-bottom: 2em;
+    padding: 0 10px;
+}
+
+/********** Slide 44/45 *************/
+/*.slide44 body,*/
+/*.slide45 body {*/
+    /*background: url("../../img/bb-teddy.jpg") no-repeat 0 0;*/
+    /*background-size: 100% auto;*/
+/*}*/
+
+/*.slide44 h2,*/
+/*.slide45 h2 {*/
+    /*display: inline-block;*/
+    /*padding: 10px;*/
+    /*color: white;*/
+    /*background-color: #0f2308;*/
+/*}*/
+
+.slide45 blockquote {
+    width: 100%;
+    background-color: #0f2308;
+}
+
+.slide45 small {
+    float: right;
+}
+
+/************** Slide 47 ***********/
+.slide47 blockquote {
+    width: 100%;
+    background-color: #0f2308;
+}
+
+.slide47 small {
+    float: right;
+}
