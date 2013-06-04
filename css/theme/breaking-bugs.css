@@ -628,7 +628,7 @@ div#breakingbad {
 .slide42 body,
 .slide43 body {
     background: url("../../img/bb-teddy.jpg") no-repeat 0 0;
-    background-size: 100% auto;
+    background-size: 100% 100%;
 }
 
 .slide41 h2,
@@ -748,13 +748,13 @@ background-size: 100% auto;
 /********** Slide 55 *************/
 .slide55 body {
     background: url("../../img/bb-website.png") no-repeat 0 0;
-    background-size: 100% auto;
+    background-size: 100% 100%;
 }
 
 /********** Slide 56 *************/
 .slide56 body {
     background: url("../../img/bb-savewalter.png") no-repeat 0 0;
-    background-size: 100% auto;
+    background-size: 100% 100%;
 }
 
 /********** Slide 56 *************/

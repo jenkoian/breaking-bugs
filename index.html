@@ -259,7 +259,7 @@
         alert(agentsPerMethHead); // Infinity
                         </code>
                     </pre>
-                    <h2>Arithmetic over/underflow</h2>
+                    <h2>Arithmetic over/underflow (e.g. Y2K38)</h2>
                    <pre>
                         <code>
     var waltsBalance = 344324070495708573409874598734590728;
@@ -370,7 +370,7 @@ for (var i = 0; i < crew.length; i++) {
             k = k + 1;
         }
 
-        alert(k);
+        alert(k); // NaN
                         </code>
                     </pre>
                     <h2>Access violations</h2>
@@ -418,7 +418,7 @@ for (var i = 0; i < crew.length; i++) {
                     <p>Two or more competing actions waiting for the other to finish.</p>
                     <br />
                     <h2>Race condition</h2>
-                    <p>TODO: Brief description of race condition</p>
+                    <p>Assumption that one event or task finished before another begins.</p>
                 </section>
 
                 <!--Slide 30-->
@@ -535,7 +535,7 @@ for (var i = 0; i < crew.length; i++) {
                         <p class="fragment">The opposite of a <em>Heisenbug</em> is a <strong>Bohr bug</strong></p>
                         <p class="fragment">A <em>Bohr bug</em> is a bug that is easily repeatable</p>
                         <p class="fragment">A <em>Bohr bug</em> is the kind of bug we want</p>
-                        <p class="fragment">A <em>Heisenbug bug</em> is the kind of bug we don't want</p>
+                        <p class="fragment">A <em>Heisenbug</em> is the kind of bug we don't want</p>
                     </section>
                 </section>
 
@@ -662,64 +662,212 @@ for (var i = 0; i < crew.length; i++) {
                         <p class="fragment">Do not underestimate this</p>
                         <p class="fragment">Allows us to look at bugs at a higher level of abstraction</p>
                         <p class="fragment">Allows us to look at common causes of certain kinds of bugs and thus common solutions</p>
+                        <p class="fragment">Can be domain specific</p>
                     </section>
                 </section>
 
-                <!--Slide 59-->
-				<section data-state="slide59">
-                    <h2>Prevention > Cure</h2>
-				</section>
-
                 <!--Slide 60-->
-                <section data-state="slide60">
+                <section data-state="slide59">
                     <section>
                         <h2>Prevention > Cure</h2>
                         <p class="fragment">What can we do to prevent bugs?</p>
                     </section>
                 </section>
 
-                <!--Slide 61-->
-                <section data-state="slide61">
+                <!--Slide 60-->
+                <section data-state="slide60">
                     <section>
                         <h2>Write less code</h2>
                     </section>
                 </section>
 
-                <!--Slide 8-->
-				<section data-state="slide8">
-                    <h2>Famous bugs</h2>
-                    <p>http://en.wikipedia.org/wiki/List_of_software_bugs</p>
-                    <p>Millenium bug etc</p>
+                <!--Slide 61-->
+                <section data-state="slide61">
+                    <section>
+                        <h2>Programming style</h2>
+                        <p>Defensive programming, coding standards, KISS, DRY etc.</p>
+                    </section>
+                </section>
+
+                <!--Slide 62-->
+                <section data-state="slide62">
+                    <section>
+                        <h2>Programming techniques</h2>
+                        <p>Can an exception be avoided? Is there a better alternative?</p>
+                    </section>
+                </section>
+
+                <!--Slide 63-->
+                <section data-state="slide63">
+                    <section>
+                        <h2>Take advantage of language features</h2>
+                        <p>Type hints, assertions, contracts etc.</p>
+                    </section>
+                </section>
+
+                <!--Slide 64-->
+                <section data-state="slide64">
+                    <section>
+                        <h2>Short, concise user stories</h2>
+                        <p>Rather than a monolithic specification, which is hard to understand, let alone implement.</p>
+                        <p>Be agile, iterate</p>
+                    </section>
+                </section>
+
+                <!--Slide 65-->
+                <section data-state="slide65">
+                    <section>
+                        <h2>Code Analysis</h2>
+                        <p class="fragment">Continuous integration</p>
+                        <p class="fragment">Automated testing</p>
+                        <p class="fragment">Mess detection, complexity analysis, copy paste analysis etc.</p>
+                    </section>
+                </section>
+
+                <!--Slide 66-->
+                <section data-state="slide66">
+                    <section>
+                        <h2>Monitoring</h2>
+                        <p>Average response time, uptime, error logs etc.</p>
+                        <p>Tools like New Relic etc.</p>
+                    </section>
+                </section>
+
+                <!--Slide 67-->
+                <section data-state="slide67">
+                    <section>
+                        <h2>Communication</h2>
+                        <p class="fragment">Ensure code comments are concise</p>
+                        <p class="fragment">Keep on top of documentation</p>
+                        <p class="fragment">Knowledge sharing</p>
+                        <p class="fragment">Shared ownership of code</p>
+                    </section>
+                </section>
+
+                <!--Slide 68-->
+                <section data-state="slide68">
+                    <section>
+                        <h2>Education</h2>
+                        <p class="fragment">Make things simple</p>
+                        <p class="fragment">Do everything you can to help the user</p>
+                    </section>
+                </section>
+
+                <!--Slide 69-->
+                <section data-state="slide69">
+                    <section>
+                        <h2>Ditch IE <span class="fragment">(< 8)</span></h2>
+                        <p class="fragment">Usage of IE7 has dipped below 1%</p>
+                        <p class="fragment">Get supported browsers locked down early</p>
+                    </section>
+                </section>
+
+                <!--Slide 70-->
+                <section data-state="slide70">
+                    <h2>Managing bugs</h2>
+                </section>
+
+                <!--Slide 71-->
+                <section data-state="slide71">
+                    <section>
+                        <p class="fragment">Bugs are inevitable and should never be ignored</p>
+                        <p class="fragment">Bugs should be categorised and prioritised</p>
+                        <p class="fragment">Note, the severity of a bug is not the same as it's importance for fixing. Consider triage.</p>
+                        <p class="fragment">Use a good bug tracking tool (e.g. not bugzilla)</p>
+                        <p class="fragment">Use a good debugging tool</p>
+                        <p class="fragment">Ensure all bugs are managed in one place</p>
+                        <p class="fragment">How bugs are reported is key</p>
+                        <p class="fragment">Have a good bug report template or similar</p>
+                    </section>
+
+                    <aside class="notes">
+                        Point 3 example: Windows BSOD may be considered severe, but if it happends very infrequently, a broken start icon may be considered more important.
+                        Point 6. Having separate support, ticket systems is fine, but bugs should be managed in one place.
+                    </aside>
+                </section>
+
+                <section data-state="slide73">
+                    <h2>Example bug report</h2>
+                    <p>TODO: Image of bug report here</p>
+                </section>
+
+                <!--Slide 72-->
+                <section data-state="slide72">
+                    <section>
+                        <h2>Not all bugs have to be fixed!</h2>
+                        <p class="fragment">Some bugs may in fact be features!</p>
+                        <p class="fragment">A bug can be useful and something your users prefer</p>
+                        <p class="fragment">Bugs can sometimes be deemed too low priority to spend time fixing</p>
+                        <p class="fragment">It is not economical to fix bugs of such low severity</p>
+                        <p class="fragment">There could be new work not yet released which inadvertently fixes the reported bug</p>
+                        <p class="fragment">PEBKAC</p>
+                    </section>
+                </section>
+
+                <!--Slide 73-->
+                <section data-state="slide73">
+                    <section>
+                        <h2>Be careful about rewarding bug fixes</h2>
+                        <p class="fragment">Rewards for number of bugs fixed can promote fixes of simple bugs over important ones</p>
+                        <p class="fragment">Don't rank developers by bug count</p>
+                        <p class="fragment">Great way to reduce confidence, lack of volunteers for complex problems etc.</p>
+                    </section>
+                </section>
+
+                <!--Slide 74-->
+                <section data-state="slide74">
+                    <blockquote>
+                        given enough eyeballs, all bugs are shallow
+                    </blockquote>
+                    <small>http://en.wikipedia.org/wiki/Linus%27s_Law</small>
+                </section>
+
+                <!--Slide 75-->
+                <section data-state="slide75">
+                    <p>Shows benefits of open source</p>
+                    <p>Do you really need to write that library or can you use that popular open source library with lots of eyeballs?</p>
+                </section>
+
+                <!--Slide 76-->
+				<section data-state="slide76">
+                    <h2>Why dropping your database on a production box isn't a big deal..</h2>
+                    <p>(although should be avoided at all costs of course!)</p>
 				</section>
 
-                <!--Slide 9-->
-				<section data-state="slide9">
-					<section>
-						<h2>Fragmented Views</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<ol>
-							<li class="fragment"><code>any type</code></li>
-							<li class="fragment"><em>of view</em></li>
-							<li class="fragment"><strong>fragments</strong></li>
-						</ol>
+                <!--Slide 77-->
+                <section data-state="slide77">
+                    <p>June 4 1996 - The European Space Agency's Ariane 5 Flight 501 was destroyed 40 seconds after takeoff</p>
+                    <p>The US$1 billion prototype rocket self-destructed due to a bug in the on-board guidance software.</p>
+                </section>
 
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
-					</section>
-					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's a few styles of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment roll-in">roll-in</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-green">highlight-green</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
-					</section>
-				</section>
+                <!--Slide 77-->
+                <section data-state="slide77">
+                    <p>A bug in the code controlling the Therac-25 radiation therapy machine was directly responsible for at least five patient deaths in the 1980s when it administered excessive quantities of X-rays.</p>
+                </section>
+
+                <!--Slide 78-->
+                <section data-state="slide78">
+                    <p>A Medtronic heart device was found vulnerable to remote attacks in March 2008</p>
+                </section>
+
+                <!--Slide 79-->
+                <section data-state="slide79">
+                    <p>Smart ship USS Yorktown was left dead in the water in 1997 for nearly 3 hours after a divide by zero error</p>
+                </section>
+
+                <!--Slide 79-->
+                <section data-state="slide79">
+                    <h2>Y2K / Y2K38</h2>
+                    <p>After 03:14:07 UTC on 19 January 2038 - unix timestamp will 'wrap around' due to integer overflow</p>
+                    <p>If you're storing timestamps in an integer field in your database you may want to consider updating</p>
+                    <p>MySQL's UNIX_TIMESTAMP() function will return 0 after that date</p>
+                </section>
+
+                <!--Slide 80-->
+                <section data-state="slide80">
+                    <h2>Thanks!</h2>
+                    <p>@jenko</p>
+                </section>
 
 			</div>
 
