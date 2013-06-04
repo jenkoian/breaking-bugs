@@ -535,13 +535,14 @@ div#breakingbad {
     background-color: #0f2308;
 }
 
-/********** Slide 18/21/23/25/28/30/34/37 *************/
+/********** Slide 18/21/23/25/28/30/32/34/37 *************/
 .slide18 body,
 .slide21 body,
 .slide23 body,
 .slide25 body,
 .slide28 body,
 .slide30 body,
+.slide32 body,
 .slide34 body,
 .slide37 body {
     background: url("../../img/bb-lab.jpg") no-repeat 0 0;
@@ -554,6 +555,7 @@ div#breakingbad {
 .slide25 h2,
 .slide28 h2,
 .slide30 h2,
+.slide32 h2,
 .slide34 h2,
 .slide37 h2 {
     display: inline-block;
@@ -566,6 +568,7 @@ div#breakingbad {
 .slide25 h2.active,
 .slide28 h2.active,
 .slide30 h2.active,
+.slide32 h2.active,
 .slide34 h2.active,
 .slide37 h2.active {
     background-color: #0f2308;
@@ -686,4 +689,78 @@ div#breakingbad {
 
 .slide47 small {
     float: right;
+}
+
+/************** Slide 49 ***********/
+.slide49 blockquote {
+    width: 100%;
+    background-color: #0f2308;
+}
+
+.slide49 small {
+    float: right;
+}
+
+/************** Slide 51 ***********/
+.slide51 p {
+    display: inline-block;
+    background-color: #0f2308;
+    margin-bottom: 2em;
+    padding: 0 10px;
+}
+
+/********** Slide 52/53 *************/
+.slide52 body,
+.slide53 body {
+background: url("../../img/bb-desert.jpg") no-repeat 0 0;
+background-size: 100% auto;
+}
+
+.slide52 h2,
+.slide53 h2 {
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    background-color: #0f2308;
+}
+
+.slide53 p,
+.slide52 p {
+    display: inline-block;
+    background-color: #0f2308;
+    margin-bottom: 2em;
+    padding: 0 10px;
+}
+
+/********** Slide 54 *************/
+.slide54 body {
+    background: url("../../img/bb-wtf.jpg") no-repeat 0 0;
+    background-size: 100% auto;
+}
+
+.slide54 h2 {
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    background-color: #0f2308;
+}
+
+/********** Slide 55 *************/
+.slide55 body {
+    background: url("../../img/bb-website.png") no-repeat 0 0;
+    background-size: 100% auto;
+}
+
+/********** Slide 56 *************/
+.slide56 body {
+    background: url("../../img/bb-savewalter.png") no-repeat 0 0;
+    background-size: 100% auto;
+}
+
+/********** Slide 56 *************/
+.slide57 h3 {
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    background-color: #0f2308;
 }
