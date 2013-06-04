@@ -89,6 +89,10 @@ body {
 .reveal pre {
     box-shadow: none;
 }
+
+.reveal section {
+    /*top: -50%!important;*/
+}
 /*********************************************
  * LINKS
  *********************************************/
@@ -371,13 +375,10 @@ div#breakingbad {
 }
 
 .slide5 h2 {
-    position: absolute;
-    right: 0;
-    bottom: 0;
     display: inline;
     color: white;
     background-color: #0f2308;
-    padding: 10px;
+    padding: 0 10px;
 }
 
 /********** Slide 6/7 **********/
@@ -589,6 +590,42 @@ div#breakingbad {
     background-color: #0f2308;
 }
 
+/********** Slide 31 *************/
+.slide31 body {
+    background: url("../../img/bb-measure.jpg") no-repeat 0 0;
+    background-size: 100% 100%;
+}
+
+.slide31 h2 {
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    background-color: #0f2308;
+}
+
+/********** Slide 35/36 *************/
+.slide35 body,
+.slide36 body {
+    background: url("../../img/bb-team.jpg") no-repeat 0 0;
+    background-size: 100% 100%;
+}
+
+.slide35 h2,
+.slide36 h2 {
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    background-color: #0f2308;
+}
+
+.slide35 p,
+.slide36 p {
+    display: inline-block;
+    background-color: #0f2308;
+    margin-bottom: 1.6em;
+    padding: 0 10px;
+}
+
 /********** Slide 38/39/40 *************/
 .slide38 body,
 .slide39 body,
@@ -623,62 +660,62 @@ div#breakingbad {
     padding: 0 10px;
 }
 
-/********** Slide 41/42/43 *************/
-.slide41 body,
-.slide42 body,
-.slide43 body {
-    background: url("../../img/bb-teddy.jpg") no-repeat 0 0;
-    background-size: 100% 100%;
-}
+/********** Slide 42 *************/
+/*.slide44 body,*/
+/*.slide45 body {*/
+/*background: url("../../img/bb-teddy.jpg") no-repeat 0 0;*/
+/*background-size: 100% auto;*/
+/*}*/
 
-.slide41 h2,
-.slide42 h2,
-.slide43 h2 {
-    display: inline-block;
-    padding: 10px;
-    color: white;
-    background-color: #0f2308;
-}
+/*.slide44 h2,*/
+/*.slide45 h2 {*/
+/*display: inline-block;*/
+/*padding: 10px;*/
+/*color: white;*/
+/*background-color: #0f2308;*/
+/*}*/
 
 .slide42 blockquote {
     width: 100%;
     background-color: #0f2308;
 }
 
-.slide42 small,
-.slide43 small {
+.slide42 small {
     float: right;
 }
 
-.slide43 p {
-    display: inline-block;
-    background-color: #0f2308;
-    margin-bottom: 2em;
-    padding: 0 10px;
+/********** Slide 43/44/45 *************/
+.slide43 body,
+.slide44 body,
+.slide45 body {
+    background: url("../../img/bb-teddy.jpg") no-repeat 0 0;
+    background-size: 100% 100%;
 }
 
-/********** Slide 44/45 *************/
-/*.slide44 body,*/
-/*.slide45 body {*/
-    /*background: url("../../img/bb-teddy.jpg") no-repeat 0 0;*/
-    /*background-size: 100% auto;*/
-/*}*/
+.slide43 h2,
+.slide44 h2,
+.slide45 h2 {
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    background-color: #0f2308;
+}
 
-/*.slide44 h2,*/
-/*.slide45 h2 {*/
-    /*display: inline-block;*/
-    /*padding: 10px;*/
-    /*color: white;*/
-    /*background-color: #0f2308;*/
-/*}*/
-
-.slide45 blockquote {
+.slide44 blockquote {
     width: 100%;
     background-color: #0f2308;
 }
 
+.slide44 small,
 .slide45 small {
     float: right;
+}
+
+.slide45 p {
+    display: inline-block;
+    background-color: #0f2308;
+    margin-bottom: 2em;
+    padding: 0 10px;
 }
 
 /************** Slide 47 ***********/
@@ -701,12 +738,19 @@ div#breakingbad {
     float: right;
 }
 
-/************** Slide 51 ***********/
-.slide51 p {
+/********** Slide 50/51 *************/
+.slide50 body,
+.slide51 body {
+    background: url("../../img/bb-crash.png") no-repeat 0 0;
+    background-size: 100% 100%;
+}
+
+.slide50 h2,
+.slide51 h2 {
     display: inline-block;
+    padding: 10px;
+    color: white;
     background-color: #0f2308;
-    margin-bottom: 2em;
-    padding: 0 10px;
 }
 
 /********** Slide 52/53 *************/
@@ -758,7 +802,248 @@ background-size: 100% auto;
 }
 
 /********** Slide 56 *************/
+.slide57 body {
+    background: url("../../img/bb-group.jpg") no-repeat 0 0;
+    background-size: 100% auto;
+}
+
+.slide57 h2 {
+    display: inline-block;
+    padding: 0 10px;
+    color: white;
+    background-color: #0f2308;
+}
+
 .slide57 h3 {
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    background-color: #0f2308;
+}
+
+/********** Slide 59 *************/
+.slide59 body {
+    background: url("../../img/bb-prevention.png") no-repeat 0 0;
+    background-size: 100% auto;
+}
+
+.slide59 h2 {
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    background-color: #0f2308;
+}
+
+.slide59 p {
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    background-color: #0f2308;
+}
+
+/********** Slide 65 *************/
+.slide65 body {
+    background: url("../../img/bb-analysis.jpg") no-repeat 0 0;
+    background-size: 100% auto;
+}
+
+.slide65 h2 {
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    background-color: #0f2308;
+}
+
+.slide65 p {
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    background-color: #0f2308;
+}
+
+/********** Slide 66 *************/
+.slide66 body {
+    background: url("../../img/bb-cash.jpg") no-repeat 0 0;
+    background-size: 100% auto;
+}
+
+.slide66 h2 {
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    background-color: #0f2308;
+}
+
+.slide66 p {
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    background-color: #0f2308;
+}
+
+/********** Slide 67 *************/
+.slide67 body {
+    background: url("../../img/bb-phone.jpg") no-repeat 0 0;
+    background-size: 100% 100%;
+}
+
+.slide67 h2 {
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    background-color: #0f2308;
+}
+
+.slide67 p {
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    background-color: #0f2308;
+}
+
+/********** Slide 68 *************/
+.slide68 body {
+    background: url("../../img/bb-school.png") no-repeat 0 0;
+    background-size: 100% 100%;
+}
+
+.slide68 h2 {
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    background-color: #0f2308;
+}
+
+.slide68 p {
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    background-color: #0f2308;
+}
+
+/********** Slide 69 *************/
+.slide69 body {
+    background: url("../../img/bb-ditch.jpg") no-repeat 0 0;
+    background-size: 100% auto;
+}
+
+.slide69 h2 {
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    background-color: #0f2308;
+}
+
+.slide69 p {
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    background-color: #0f2308;
+}
+
+/********** Slide 70 *************/
+.slide70 body {
+    background: url("../../img/bb-making.jpg") no-repeat 0 0;
+    background-size: 100% auto;
+}
+
+.slide70 h2 {
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    background-color: #0f2308;
+}
+
+.slide70 p {
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    background-color: #0f2308;
+}
+
+/********** Slide 72 *************/
+.slide72 body {
+    background: url("../../img/bb-van.jpg") no-repeat 0 0;
+    background-size: 100% 100%;
+}
+
+.slide72 h2 {
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    background-color: #0f2308;
+}
+
+.slide72 p {
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    background-color: #0f2308;
+}
+
+/********** Slide 73 *************/
+.slide73 body {
+    background: url("../../img/bb-laundry.jpg") no-repeat 0 0;
+    background-size: 100% auto;
+}
+
+.slide73 h2 {
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    background-color: #0f2308;
+}
+
+.slide73 p {
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    background-color: #0f2308;
+}
+
+/********** Slide 76/77/78/79 *************/
+.slide76 body,
+.slide77 body,
+.slide78 body,
+.slide79 body {
+    background: url("../../img/bb-stare.jpg") no-repeat 0 0;
+    background-size: 100% auto;
+}
+
+.slide76 h2,
+.slide77 h2,
+.slide78 h2,
+.slide79 h2 {
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    background-color: #0f2308;
+}
+
+.slide76 p,
+.slide77 p,
+.slide78 p,
+.slide79 p {
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    background-color: #0f2308;
+}
+
+/********** Slide 80 *************/
+.slide80 body {
+    background: url("../../img/bb-run.jpg") no-repeat 0 0;
+    background-size: 100% auto;
+}
+
+.slide80 h2 {
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    background-color: #0f2308;
+}
+
+.slide80 p {
     display: inline-block;
     padding: 10px;
     color: white;
