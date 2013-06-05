@@ -150,7 +150,7 @@
                     <small>http://en.wikipedia.org/wiki/Software_bug</small>
 
                     <aside class="notes">
-                        This is what wikipedia describes it as. Quite concise and accurate. Containslots of words like
+                        This is what wikipedia describes it as. Quite concise and accurate. Contains a lots of words like
                         failure, error and fault.
                     </aside>
                 </section>
@@ -158,20 +158,28 @@
                 <!--Slide 5-->
                 <section data-state="slide5">
                     <h2>Bugs make users sad</h2>
+                    <br />
+                    <p>
+                        <img src="img/bb-junior.gif" />
+                    </p>
                 </section>
 
                 <!--Slide 6-->
                 <section data-state="slide6">
                     <h2>Bugs make users angry</h2>
+                    <br />
+                    <p>
+                        <img src="img/warren-bs.png" />
+                    </p>
                 </section>
 
-                <!--Slide 7-->
-                <section data-state="slide7">
-                    <img src="img/bb-junior.gif" />
-                    <aside class="notes">
-                        They make Walt junior swear
-                    </aside>
-                </section>
+                <!--&lt;!&ndash;Slide 7&ndash;&gt;-->
+                <!--<section data-state="slide7">-->
+                    <!--<img src="img/bb-junior.gif" />-->
+                    <!--<aside class="notes">-->
+                        <!--They make Walt junior swear-->
+                    <!--</aside>-->
+                <!--</section>-->
 
                 <!--Slide 8-->
 				<section data-state="slide8">
@@ -634,7 +642,7 @@ for (var i = 0; i < crew.length; i++) {
                     <p>A bug could be introduced from a bad merger of code. Unresolved conflicts, aggressive SCM merging etc.</p>
                     <br />
                     <h2>No standards</h2>
-                    <p>Walter White does things using the x method, Jesse Pinkman uses the y method. This crosshatch of standards results in a weak and impure product.</p>
+                    <p>Walter does things using the x method, Jesse uses the y method. This crosshatch of standards results in a weak and impure product.</p>
                 </section>
 
                 <!--Slide 37-->
@@ -667,7 +675,7 @@ for (var i = 0; i < crew.length; i++) {
                         Named after the physicist Werner Heisenberg. He came up with the observer effect. This basically
                         means that the act of observation will alter the state of what is being observed. For example
                         checking the tyre pressure on a car, it is impossible to measure this without letting some air out of
-                        the tyre
+                        the tyre.
                     </aside>
                 </section>
 
@@ -993,7 +1001,7 @@ for (var i = 0; i < crew.length; i++) {
                     <aside class="notes">
                         First and foremost, your application should be as simple to use as possible, but you should also
                         support the user through things like user guides, support forums etc. where necessary. Helps cut
-                        down on ID10T bug report.
+                        down on ID10T bug reports.
                     </aside>
                 </section>
 
@@ -1034,6 +1042,7 @@ for (var i = 0; i < crew.length; i++) {
 
                     <aside class="notes">
                         Point 3 example: Windows BSOD may be considered severe, but if it happens very infrequently, a broken start icon may be considered more important.
+
                         Point 6. Having separate support, ticket systems is fine, but bugs should be managed in one place.
                     </aside>
                 </section>
@@ -1058,8 +1067,10 @@ for (var i = 0; i < crew.length; i++) {
                     <aside class="notes">
                         Point 2 example. Gmail had a delay when sending emails which they turned into an undo feature.
                         They had the delay anyway, so was simple enough to have a feature which stopped the sending process.
+
                         Point 2 example. Lara Croft's cleavage was never meant to be so busty. A slip of the mouse meant bust
                         size being 150% instead of 50%. It was met with instant approval from the team :)
+
                         Point 2 example. Unix hidden files. An accident, only hidden because . and .. are directories, so the
                         code was literally as simple as using a strcmp on first character and hiding if so.
                     </aside>
@@ -1202,6 +1213,15 @@ for (var i = 0; i < crew.length; i++) {
 					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
 				]
 			});
+
+            Reveal.addEventListener( 'slidechanged', function( event ) {
+                // event.previousSlide, event.currentSlide, event.indexh, event.indexv
+                var notes = event.currentSlide.querySelector(".notes");
+                if (notes) {
+                    console.clear();
+                    console.info(notes.innerHTML.replace(/\n\s+/g,'\n'));
+                }
+            } );
 
 		</script>
 

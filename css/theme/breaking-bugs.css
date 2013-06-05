@@ -390,20 +390,18 @@ div#breakingbad {
 
 .slide6 h2,
 .slide7 h2 {
-    position: absolute;
-    right: 0;
-    top: 0;
     display: inline;
     color: white;
     background-color: #0f2308;
-    padding: 10px;
+    padding: 0 10px;
 }
 
-.slide7 img {
-    border: none;
-    clear: both;
-    float: right;
-}
+/*.slide6 img,*/
+/*.slide7 img {*/
+    /*border: none;*/
+    /*clear: both;*/
+    /*float: right;*/
+/*}*/
 
 /********** Slide 8/9 *************/
 .slide8 body,
