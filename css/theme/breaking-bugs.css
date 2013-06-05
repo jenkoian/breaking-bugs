@@ -339,7 +339,7 @@ div#breakingbad {
 
 /********** Slide 3 **********/
 .slide3 body {
-    background: url("../../img/bb-fly.png") no-repeat 0 0;
+    background: url("../../img/bb-fly.jpg") no-repeat 0 0;
     background-size: 100% 100%;
 }
 
@@ -353,7 +353,7 @@ div#breakingbad {
 
 /********** Slide 4 **********/
 .slide4 body {
-    background: url("../../img/bb-fly.png") no-repeat 0 0;
+    background: url("../../img/bb-fly.jpg") no-repeat 0 0;
     background-size: 100% 100%;
 }
 
@@ -741,7 +741,7 @@ div#breakingbad {
 /********** Slide 50/51 *************/
 .slide50 body,
 .slide51 body {
-    background: url("../../img/bb-crash.png") no-repeat 0 0;
+    background: url("../../img/bb-crash.jpg") no-repeat 0 0;
     background-size: 100% 100%;
 }
 
@@ -791,13 +791,13 @@ background-size: 100% auto;
 
 /********** Slide 55 *************/
 .slide55 body {
-    background: url("../../img/bb-website.png") no-repeat 0 0;
+    background: url("../../img/bb-website.jpg") no-repeat 0 0;
     background-size: 100% 100%;
 }
 
 /********** Slide 56 *************/
 .slide56 body {
-    background: url("../../img/bb-savewalter.png") no-repeat 0 0;
+    background: url("../../img/bb-savewalter.jpg") no-repeat 0 0;
     background-size: 100% 100%;
 }
 
