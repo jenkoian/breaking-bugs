@@ -19,7 +19,7 @@ Installation
 View online
 ------------
 
-_Soon_
+http://jenkoian.github.io/breaking-bugs
 
 Acknowledgements
 -----------------
