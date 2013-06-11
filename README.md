@@ -21,6 +21,8 @@ View online
 
 http://jenkoian.github.io/breaking-bugs
 
+Press `s` or view console to see my notes
+
 Acknowledgements
 -----------------
 
