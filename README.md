@@ -29,3 +29,4 @@ Acknowledgements
 * Thanks to AMC for producing a kick ass TV show
 * Thanks to Bryan Cranston for being a bad ass Heisenberg
 * Thanks to _Big Sean_ for inspiring the talk
+* Hakim El Hattab for creating the kick ass [reveal js](http://lab.hakim.se/reveal-js/)
