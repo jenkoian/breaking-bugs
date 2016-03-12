@@ -8,7 +8,7 @@ Installation
 
 2. Install [Grunt](http://gruntjs.com/getting-started#installing-the-cli)
 
-3. `git clone git@bitbucket.org:jenko/breaking-bugs.git' && cd breaking-bugs
+3. `git clone git@github.com:jenkoian/breaking-bugs.git' && cd breaking-bugs
 
 4. `sudo npm install`
 
